@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Jordi Bertomeu · Game Developer</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
 
@@ -29,25 +30,40 @@
     <h2>Gameplay</h2>
     <!-- Vídeo -->
     <iframe width="560" height="315" src="https://www.youtube.com/embed/c9v0u86YjA8?si=ZSFAAdp-5Z-WnE8F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <video controls>
-      <source src="assets/videos/gameplay.mp4" type="video/mp4">
-      El teu navegador no suporta vídeo.
-    </video>
     
     <h2>Captures de pantalla</h2>
-    <!-- Imatge -->
-    <img src="assets/images/project1.png" alt="Gameplay del projecte">
+    <!-- Carrusel d'imatges -->
+    <div class="carousel">
+      <button class="carousel-btn prev">‹</button>
+    
+      <div class="carousel-track">
+        <img src="assets/images/game1.png" alt="Screenshot 1">
+        <img src="assets/images/game2.png" alt="Screenshot 2">
+        <img src="assets/images/game3.png" alt="Screenshot 3">
+      </div>
+      <button class="carousel-btn next">›</button>
+    </div>
 
     <h2>Música i efectes de so</h2>
     <!-- Àudio -->
+    <h1>Main Menu Theme</h1>
     <audio controls>
-      <source src="assets/audio/theme.mp3" type="audio/mpeg">
+      <source src="assets/audio/mainmenu.mp3" type="audio/mpeg">
       El teu navegador no suporta àudio.
     </audio>
+    <h1>Main Theme</h1>
+    <audio controls>
+      <source src="assets/audio/maintheme.mp3" type="audio/mpeg">
+      El teu navegador no suporta àudio.
+    </audio>
+    <h1>Making Of</h1>
+    <video controls>
+      <source src="assets/audio/mainmenu.mp3" type="video/mp4">
+    </video>
 
     <p>
       Joc cooperatiu local 2D desenvolupat amb Unity.
-      Inclou combat, trencaclosques, enemics i mecàniques cooperatives.
+      Inclou combat, trencaclosques, enemics i mecàniques cooperatives. Juga'l ara a <a href="https://kerueru.itch.io/la-superfcie">itch.io</a>
     </p>
 
     <ul>
