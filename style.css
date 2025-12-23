@@ -19,6 +19,7 @@ body {
 .hero p {
   color: #aaa;
 }
+
 /* Navegació */
 .nav {
   position: absolute;
@@ -178,6 +179,69 @@ audio {
   border-radius: 6px;
   margin-bottom: 6px;
   font-size: 0.9rem;
+}
+
+/* 2D Pixel Artist Section */
+body.pixelart-body {
+  background: url('assets/images/beach_background.PNG') no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #eaeaea;
+  image-rendering: pixelated;
+}
+
+.pixel-art {
+  background: #121212;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.pixel-art h2 {
+  margin-bottom: 10px;
+}
+
+.pixel-art p {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.pixel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.pixel-card {
+  background: #1b1b1b;
+  padding: 15px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 250px;
+}
+
+.pixel-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.pixel-card p {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin: 0;
+}
+
+/* Imatge destacada */
+.pixel-card img.large {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  image-rendering: pixelated;
+  border: 2px solid #555;
+  margin-bottom: 10px;
 }
 
 /* Footer */
