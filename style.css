@@ -1,51 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;1,9..40,300&display=swap');
+
+/* ──────────────────────────────
+   Base
+────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'DM Sans', Arial, sans-serif;
   background: #0f0f0f;
   color: #eaeaea;
 }
 
+/* ──────────────────────────────
+   Hero
+────────────────────────────── */
 .hero {
   padding: 60px 20px;
   text-align: center;
   background: linear-gradient(120deg, #1f1f1f, #2d2d2d);
-  margin-bottom:10px;
+  margin-bottom: 10px;
+  position: relative;
 }
 
 .hero h1 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
   font-size: 3rem;
+  letter-spacing: -0.02em;
   margin: 0;
 }
 
 .hero p {
   color: #aaa;
+  font-weight: 300;
 }
 
-/* Navegació */
+/* ──────────────────────────────
+   Navegació
+────────────────────────────── */
 .nav {
   position: absolute;
   top: 20px;
   right: 30px;
+  display: flex;
+  gap: 20px;
 }
 
 .nav a {
-  color: #eaeaea;
+  color: #aaa;
   text-decoration: none;
-  margin-left: 20px;
-  font-weight: bold;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
 }
 
 .nav a:hover {
-  text-decoration: underline;
+  color: #eaeaea;
 }
 
+.nav a.active {
+  color: #b8ff57;
+  border-bottom-color: #b8ff57;
+}
 
+/* ──────────────────────────────
+   Seccions generals
+────────────────────────────── */
 section {
   max-width: 900px;
   margin: auto;
-  padding: 0px 20px;
+  padding: 0 20px;
 }
 
+h2 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+h3, h4, h5 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+}
+
+/* ──────────────────────────────
+   About
+────────────────────────────── */
 .about img {
   width: 200px;
   height: 200px;
@@ -56,11 +103,29 @@ section {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* ──────────────────────────────
+   Targetes de projecte
+────────────────────────────── */
 .project-card {
   background: #1c1c1c;
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 40px;
+  border: 0.5px solid #2a2a2a;
+  transition: border-color 0.25s;
+}
+
+.project-card:hover {
+  border-color: #b8ff57;
+}
+
+.project-card a {
+  color: #b8ff57;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
 }
 
 .project-card img,
@@ -71,6 +136,13 @@ section {
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+.project-card iframe {
+  display: block;
+  margin: 0 auto 15px;
+  border-radius: 8px;
+  max-width: 100%;
 }
 
 audio {
@@ -92,28 +164,30 @@ audio {
   font-size: 0.9rem;
 }
 
+/* ──────────────────────────────
+   Carrusel  (fix: track ocupa 100%)
+────────────────────────────── */
 .carousel {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 .carousel-track {
   display: flex;
-  height: 50%;
-  width: 50%;
   transition: transform 0.4s ease-in-out;
+  /* FIX: cada imatge ocupa exactament l'amplada visible */
 }
 
 .carousel-track img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
   flex-shrink: 0;
+  object-fit: cover;
   border-radius: 10px;
 }
 
-/* Botons */
+/* Botons del carrusel */
 .carousel-btn {
   position: absolute;
   top: 50%;
@@ -126,30 +200,30 @@ audio {
   cursor: pointer;
   border-radius: 6px;
   z-index: 10;
+  transition: background 0.2s;
 }
 
-.carousel-btn.prev {
-  left: 10px;
-}
-
-.carousel-btn.next {
-  right: 10px;
-}
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
 
 .carousel-btn:hover {
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(184, 255, 87, 0.2);
+  color: #b8ff57;
 }
 
-
-/* Environment Artist Section */
+/* ──────────────────────────────
+   Environment Artist
+────────────────────────────── */
 .environment {
   background: #121212;
+  padding: 20px 0 40px;
 }
 
 .env-intro {
   max-width: 700px;
   margin-bottom: 30px;
   color: #ccc;
+  font-weight: 300;
 }
 
 .env-grid {
@@ -163,10 +237,12 @@ audio {
   background: #1b1b1b;
   padding: 20px;
   border-radius: 12px;
+  border: 0.5px solid #2a2a2a;
 }
 
 .env-card h3 {
   margin-top: 0;
+  color: #b8ff57;
 }
 
 .env-card ul {
@@ -182,7 +258,9 @@ audio {
   font-size: 0.9rem;
 }
 
-/* 2D Pixel Artist Section */
+/* ──────────────────────────────
+   2D Pixel Artist
+────────────────────────────── */
 body.pixelart-body {
   background: url('assets/images/beach_background.PNG') no-repeat center top;
   background-size: cover;
@@ -197,14 +275,8 @@ body.pixelart-body {
   text-align: center;
 }
 
-.pixel-art h2 {
-  margin-bottom: 10px;
-}
-
-.pixel-art p {
-  color: #ccc;
-  margin-bottom: 30px;
-}
+.pixel-art h2 { margin-bottom: 10px; }
+.pixel-art p { color: #ccc; margin-bottom: 30px; }
 
 .pixel-grid {
   display: grid;
@@ -219,6 +291,7 @@ body.pixelart-body {
   border-radius: 12px;
   width: 100%;
   max-width: 250px;
+  border: 0.5px solid #2a2a2a;
 }
 
 .pixel-card img {
@@ -235,7 +308,6 @@ body.pixelart-body {
   margin: 0;
 }
 
-/* Imatge destacada */
 .pixel-card img.large {
   width: 100%;
   max-width: 500px;
@@ -245,10 +317,24 @@ body.pixelart-body {
   margin-bottom: 10px;
 }
 
-/* Footer */
+/* ──────────────────────────────
+   Footer
+────────────────────────────── */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 24px 20px;
   background: #141414;
-  color: #777;
+  color: #555;
+  font-size: 0.9rem;
+  border-top: 0.5px solid #222;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #b8ff57;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }

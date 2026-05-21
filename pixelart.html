@@ -1,92 +1,86 @@
 <!DOCTYPE html>
 <html lang="ca">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Jordi Bertomeu Primo · 2D Pixel Artist</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jordi Bertomeu Primo · 2D Pixel Artist</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body class="pixelart-body">
-    <header class="hero">
-      <nav class="nav">
-        <a href="index.html">Projects</a>
-        <a href="environment.html">Environment Artist</a>
-        <a href="pixelart.html">2D Pixel Art</a>
-      </nav>
 
-        <h1>2D Pixel Artist</h1>
-        <p>Mostra del meu art en 2D i animacions pixelades</p>
-    </header>
-    <section class="project-card">
-        <h4>Animacions</h4>
-        <div class="pixel-grid">
-            <div class="pixel-card">
-                <img src="assets/images/personatge.GIF" alt="Pixel Art 1">
-                <p>Idle de personatge</p>
-            </div>
-            <div class="pixel-card">
-                <img src="assets/images/personatge_corrent.GIF" alt="Pixel Art 1">
-                <p>Moviment de personatge</p>
-            </div>
-            <div class="pixel-card">
-                <img src="assets/images/gif_muersielago.GIF" alt="Pixel Art 2">
-                <p>Enemics</p>
-            </div>
-            <div class="pixel-card">
-                <img src="assets/images/partículas.GIF" alt="Pixel Art 3">
-                <p>Efectes especials i partícules</p>
-            </div>
-        </div>
-    </section>
-    <section class="project-card">
-        <h4>Tilesets i spritesheets</h4>
-        <!-- Carrusel d'imatges -->
-        <div class="carousel">
-            <button class="carousel-btn prev">‹</button>
-            <div class="carousel-track">
-                <img src="assets/images/spritesheet_jump.PNG" alt="Screenshot 1">
-                <img src="assets/images/spritesheet_slime_boss.PNG" alt="Screenshot 2">
-                <img src="assets/images/stone.PNG" alt="Screenshot 3">
-                <img src="assets/images/mossy_stone.PNG" alt="Screenshot 4">
-                <img src="assets/images/flora.PNG" alt="Screenshot 5">
-                <img src="assets/images/trees.PNG" alt="Screenshot 6">
-                <img src="assets/images/bow_attack.PNG" alt="Screenshot 7">
-                <img src="assets/images/gerra.PNG" alt="Screenshot 8">
-            </div>
-            <button class="carousel-btn next">›</button>
-        </div>
-    </section>
-    <section class="project-card">
-        <h4>Speedpaint fons platja</h4>
-        <video controls>
-            <source src="assets/video/making_of_platja.MP4" type="video/mp4">
-        </video>
-    </section>
-    <section class="project-card">
-        <h4>Implementació a Unity</h4>
-        <div class="carousel">
-            <button class="carousel-btn prev">‹</button>
+<header class="hero">
+  <!-- nav injectat per components.js -->
+  <h1>2D Pixel Artist</h1>
+  <p>Mostra del meu art en 2D i animacions pixelades</p>
+</header>
 
-            <div class="carousel-track">
-                <img src="assets/images/unity.png" alt="Screenshot 1">
-                <img src="assets/images/unity-1.png" alt="Screenshot 2">
-                <img src="assets/images/unity-2.png" alt="Screenshot 3">
-                <img src="assets/images/unity-3.png" alt="Screenshot 4">
-                <img src="assets/images/unity-4.png" alt="Screenshot 5">
-                <img src="assets/images/unity-5.png" alt="Screenshot 6">
-                <img src="assets/images/unity-6.png" alt="Screenshot 7">
-                <img src="assets/images/unity-7.png" alt="Screenshot 8">
-            </div>
-            <button class="carousel-btn next">›</button>
-        </div>
-    </section>
+<section class="project-card" style="max-width:900px; margin: 20px auto;">
+  <h4>Animacions</h4>
+  <div class="pixel-grid">
+    <div class="pixel-card">
+      <img src="assets/images/personatge.GIF" alt="Idle de personatge">
+      <p>Idle de personatge</p>
+    </div>
+    <div class="pixel-card">
+      <img src="assets/images/personatge_corrent.GIF" alt="Moviment de personatge">
+      <p>Moviment de personatge</p>
+    </div>
+    <div class="pixel-card">
+      <img src="assets/images/gif_muersielago.GIF" alt="Enemic ratpenat">
+      <p>Enemics</p>
+    </div>
+    <div class="pixel-card">
+      <img src="assets/images/partículas.GIF" alt="Partícules">
+      <p>Efectes especials i partícules</p>
+    </div>
+  </div>
+</section>
 
-    <footer>
-        <p>📫 Contacte: jordi110398@gmail.com · GitHub</p>
-    </footer>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+<section class="project-card" style="max-width:900px; margin: 20px auto;">
+  <h4>Tilesets i spritesheets</h4>
+  <div class="carousel">
+    <button class="carousel-btn prev">‹</button>
+    <div class="carousel-track">
+      <img src="assets/images/spritesheet_jump.PNG" alt="Spritesheet salt">
+      <img src="assets/images/spritesheet_slime_boss.PNG" alt="Spritesheet slime boss">
+      <img src="assets/images/stone.PNG" alt="Stone tileset">
+      <img src="assets/images/mossy_stone.PNG" alt="Mossy stone tileset">
+      <img src="assets/images/flora.PNG" alt="Flora">
+      <img src="assets/images/trees.PNG" alt="Trees">
+      <img src="assets/images/bow_attack.PNG" alt="Bow attack">
+      <img src="assets/images/gerra.PNG" alt="Gerra">
+    </div>
+    <button class="carousel-btn next">›</button>
+  </div>
+</section>
+
+<section class="project-card" style="max-width:900px; margin: 20px auto;">
+  <h4>Speedpaint fons platja</h4>
+  <video controls style="width:100%; border-radius:8px;">
+    <source src="assets/video/making_of_platja.MP4" type="video/mp4">
+  </video>
+</section>
+
+<section class="project-card" style="max-width:900px; margin: 20px auto;">
+  <h4>Implementació a Unity</h4>
+  <div class="carousel">
+    <button class="carousel-btn prev">‹</button>
+    <div class="carousel-track">
+      <img src="assets/images/unity.png" alt="Unity 1">
+      <img src="assets/images/unity-1.png" alt="Unity 2">
+      <img src="assets/images/unity-2.png" alt="Unity 3">
+      <img src="assets/images/unity-3.png" alt="Unity 4">
+      <img src="assets/images/unity-4.png" alt="Unity 5">
+      <img src="assets/images/unity-5.png" alt="Unity 6">
+      <img src="assets/images/unity-6.png" alt="Unity 7">
+      <img src="assets/images/unity-7.png" alt="Unity 8">
+    </div>
+    <button class="carousel-btn next">›</button>
+  </div>
+</section>
+
+<!-- footer injectat per components.js -->
+<script src="components.js"></script>
+<script src="script.js"></script>
 </body>
-
 </html>

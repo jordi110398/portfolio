@@ -2,16 +2,14 @@
 <html lang="ca">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jordi Bertomeu Primo · Environment Artist</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="hero">
-  <nav class="nav">
-            <a href="index.html">Game Dev</a>
-            <a href="environment.html">Environment Artist</a>
-            <a href="pixelart.html">2D Pixel Art</a>
-        </nav>
 
+<header class="hero">
+  <!-- nav injectat per components.js -->
   <h1>Environment Artist</h1>
   <p>3D Environments · Procedural Systems · Game Engines</p>
 </header>
@@ -20,15 +18,14 @@
   <h2>🌿 About</h2>
 
   <p class="env-intro">
-    Environment Artist especialitzat en la creació d’entorns 3D per a videojocs,
+    Environment Artist especialitzat en la creació d'entorns 3D per a videojocs,
     amb focus en terrain modeling, sistemes procedurals i integració dins de motors
     de joc com Unity i Unreal.
   </p>
 
   <div class="env-grid">
-
     <div class="env-card">
-      <h3>🛠 Tools & Engines</h3>
+      <h3>🛠 Tools &amp; Engines</h3>
       <ul>
         <li>Unity</li>
         <li>Unreal Engine</li>
@@ -37,41 +34,34 @@
         <li>Substance Painter</li>
       </ul>
     </div>
-
     <div class="env-card">
       <h3>🌍 Skills</h3>
       <ul>
         <li>Terrain modeling</li>
         <li>Procedural asset generation</li>
         <li>Level composition</li>
-        <li>Lighting & atmosphere</li>
+        <li>Lighting &amp; atmosphere</li>
         <li>Optimization for gameplay</li>
       </ul>
     </div>
-
   </div>
 
-  <!-- Carrussel -->
   <div class="carousel">
     <button class="carousel-btn prev">‹</button>
-
     <div class="carousel-track">
-      <img src="assets/images/env1.png">
-      <img src="assets/images/env2.png">
-      <img src="assets/images/env3.png">
-      <img src="assets/images/env4.png">
-      <img src="assets/images/env5.png">
-      <img src="assets/images/env6.png">
+      <img src="assets/images/env1.png" alt="Environment 1">
+      <img src="assets/images/env2.png" alt="Environment 2">
+      <img src="assets/images/env3.png" alt="Environment 3">
+      <img src="assets/images/env4.png" alt="Environment 4">
+      <img src="assets/images/env5.png" alt="Environment 5">
+      <img src="assets/images/env6.png" alt="Environment 6">
     </div>
-
     <button class="carousel-btn next">›</button>
   </div>
 </section>
 
-<footer>
-  <p>📫 Contacte: jordi110398@gmail.com</p>
-</footer>
+<!-- footer injectat per components.js -->
+<script src="components.js"></script>
 <script src="script.js"></script>
-<link rel="stylesheet" href="style.css">
 </body>
 </html>
