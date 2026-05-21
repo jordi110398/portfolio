@@ -28,12 +28,11 @@ body {
 .hero h1 {
   font-family: 'Honk', system-ui;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 800;
   font-style: normal;
   font-variation-settings:
     "MORF" 19,
-    "SHLN" 26.4;
-  letter-spacing: -0.02em;
+    "SHLN" 26.4,
   margin: 0;
 }
 
