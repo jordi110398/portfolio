@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;1,9..40,300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Honk:MORF,SHLN@19,26.4&display=swap');
 /* ──────────────────────────────
    Base
 ────────────────────────────── */
@@ -26,9 +26,13 @@ body {
 }
 
 .hero h1 {
-  font-family: 'Syne', sans-serif;
-  font-weight: 800;
-  font-size: 3rem;
+  font-family: 'Honk', system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 19,
+    "SHLN" 26.4;
   letter-spacing: -0.02em;
   margin: 0;
 }
