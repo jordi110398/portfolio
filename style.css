@@ -69,8 +69,8 @@ body {
 }
 
 .nav a.active {
-  color: #b8ff57;
-  border-bottom-color: #b8ff57;
+  color: #F54927;
+  border-bottom-color: #F54927;
 }
 
 /* ──────────────────────────────
@@ -119,11 +119,11 @@ h3, h4, h5 {
 }
 
 .project-card:hover {
-  border-color: #b8ff57;
+  border-color: #F54927;
 }
 
 .project-card a {
-  color: #b8ff57;
+  color: #F54927;
   text-decoration: none;
 }
 
@@ -211,7 +211,7 @@ audio {
 
 .carousel-btn:hover {
   background: rgba(184, 255, 87, 0.2);
-  color: #b8ff57;
+  color: #F54927;
 }
 
 /* ──────────────────────────────
@@ -245,7 +245,7 @@ audio {
 
 .env-card h3 {
   margin-top: 0;
-  color: #b8ff57;
+  color: #F54927;
 }
 
 .env-card ul {
@@ -334,7 +334,7 @@ footer {
 }
 
 footer a {
-  color: #b8ff57;
+  color: #F54927;
   text-decoration: none;
 }
 
