@@ -34,7 +34,6 @@ body {
   font-variation-settings:
     "MORF" 19,
     "SHLN" 26.4,
-  margin: 0;
 }
 
 .hero p {
@@ -70,8 +69,8 @@ body {
 }
 
 .nav a.active {
-  color: #F54927;
-  border-bottom-color: #F54927;
+  color: #ffcd61;
+  border-bottom-color: #ffcd61;
 }
 
 /* ──────────────────────────────
@@ -120,11 +119,11 @@ h3, h4, h5 {
 }
 
 .project-card:hover {
-  border-color: #F54927;
+  border-color: #ffcd61;
 }
 
 .project-card a {
-  color: #F54927;
+  color: #ffcd61;
   text-decoration: none;
 }
 
@@ -212,7 +211,7 @@ audio {
 
 .carousel-btn:hover {
   background: rgba(184, 255, 87, 0.2);
-  color: #F54927;
+  color: #ffcd61;
 }
 
 /* ──────────────────────────────
@@ -246,7 +245,7 @@ audio {
 
 .env-card h3 {
   margin-top: 0;
-  color: #F54927;
+  color: #ffcd61;
 }
 
 .env-card ul {
@@ -335,7 +334,7 @@ footer {
 }
 
 footer a {
-  color: #F54927;
+  color: #ffcd61;
   text-decoration: none;
 }
 
